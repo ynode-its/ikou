@@ -9,3 +9,8 @@ INIT,
 COMPRESSION,
 CHECKSUM,
 STATS = 10;
+
+バックアップ取得後は、整合性確認も行います。
+RESTORE VERIFYONLY
+FROM DISK = N'C:\Backup\Database.bak'
+WITH CHECKSUM;
