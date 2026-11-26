@@ -1,0 +1,11 @@
+① データベースバックアップ
+以下のSQLを使用します。
+-- データベース名と保存先を変更してください
+
+BACKUP DATABASE [データベース名]
+TO DISK = N'C:\Backup\Database.bak'
+WITH
+INIT,
+COMPRESSION,
+CHECKSUM,
+STATS = 10;
